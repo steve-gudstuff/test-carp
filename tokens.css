@@ -1,0 +1,48 @@
+/* Define default button tokens in :root */
+:root {
+    --btn-font-size: 1rem;             /* Default: 16px */
+    --btn-padding-vertical: 0.5rem;      /* Default: 8px */
+    --btn-padding-horizontal: 1rem;     /* Default: 16px */
+  }
+  
+  /* Base Button Styles */
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: var(--btn-font-size);
+    padding: var(--btn-padding-vertical) var(--btn-padding-horizontal);
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+  }
+  
+  /* Modifier for a small button */
+  .btn--small {
+    --btn-font-size: 0.875rem;         /* 14px */
+    --btn-padding-vertical: 0.25rem;     /* 4px */
+    --btn-padding-horizontal: 0.5rem;    /* 8px */
+  }
+  
+  /* Modifier for a large button */
+  .btn--large {
+    --btn-font-size: 1.125rem;          /* 18px */
+    --btn-padding-vertical: 0.75rem;     /* 12px */
+    --btn-padding-horizontal: 1.5rem;    /* 24px */
+  }
+
+  .cta {
+    background-color: white;
+    color: black;
+  }
+
+  .btn:hover {
+    background-color: brown;
+  }
+
+  .cta:hover {
+    background-color: rgb(255, 199, 159);
+  }
+  

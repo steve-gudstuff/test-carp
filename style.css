@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #F76131;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    background-color: #F76131;
+}
+
+#logo img {
+    height: 15px;
+}
+
+#menu {
+    display: flex;
+    gap: 0px;
+}
+/*
+.btn {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: #aa350e;
+}
+
+.btn-cta {
+    background-color: white;
+    color: #aa350e;
+}
+    */
+
+@media (max-width: 600px) {
+    #nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 10px
+    }
+
+    #logo img {
+        height: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    #nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px
+    }
+
+    #logo img {
+        height: 15px;
+    }
+
+    /* This would be for the dropdown menu?
+    #menu {
+        flex-direction: column;
+        align-items: center;
+    } */
+}
